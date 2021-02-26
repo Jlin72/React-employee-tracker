@@ -1,0 +1,13 @@
+header {
+  background-color: lightblue;
+}
+
+.header {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}

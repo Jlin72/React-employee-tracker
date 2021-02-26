@@ -1,0 +1,18 @@
+.employeeRow {
+  /* width:fit-content; */
+  height: 130px;
+  margin: 25px;
+}
+
+.employeePic {
+  border-radius: 50%;
+  display: flex;
+}
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.textCenter {
+  text-align: center;
+}
