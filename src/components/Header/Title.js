@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import SearchBar from '../SearchBar/SearchBar';
 
-function Title({children}) {
+function Title({children, inputChange, value}) {
   return(
     <div>
       <header>
@@ -11,7 +11,7 @@ function Title({children}) {
           <p style={{textAlign: 'center'}}>Click on the the headers to sort information or use the search bar to narrow results</p>
         </div>
       </header>
-      <SearchBar />
+      <SearchBar inputChange={inputChange} value={value}/>
       {children}
     </div>
   )

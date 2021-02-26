@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {React, Component} from 'react';
 import Title from './components/Header/Title';
-import Data from './components/Employees/Data';
+import Employees from './components/Employees/Employees';
 import Loading from './components/Loading/Loading';
 import Top from './components/Header/Top';
 
@@ -10,7 +10,8 @@ class App extends Component {
   state = {
     data: [],
     isLoaded: false,
-    counter: 0
+    counter: 0,
+    searchInput: '',
   }
 
   componentDidMount() {
@@ -59,19 +60,32 @@ class App extends Component {
     }
   }
 
+  inputChange = (event) => {
+    let value = event.target.value;
+    // let dataArr = this.state.data.filter(element => element.name.first.includes(value))
+    console.log(value);
+    this.setState({
+      searchInput: value,
+      // data: dataArr
+    })
+  }
+
+  dataFilter = () => {
+    return this.state.data.filter(employee => employee.name.first.toLowerCase().includes(this.state.searchInput.toLowerCase()))
+  }
+
+
   render() {
-    let {data} = this.state
+    let {data, searchInput} = this.state
     if(this.state.isLoaded === false) {
       return <Title><Loading /></Title>
     } else if (data.length !== 16){
       return <Title><Loading /></Title>
     } else {
-      console.log(data);
-      console.log(new Date(data[0].dob.date).toLocaleDateString("en-US").split('/').join('-'));
       return (
-        <Title>
+        <Title inputChange={this.inputChange} value={searchInput}>
           <Top sort={this.sort} />
-          {data.map(employee => <Data source={employee.picture.large} firstName={employee.name.first} lastName={employee.name.last} email={employee.email} dob={new Date(employee.dob.date).toLocaleDateString("en-US").split('/').join('-')}/>)}
+          <Employees data={this.dataFilter()} />
         </Title>
       )
     }

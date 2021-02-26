@@ -1,14 +1,10 @@
 import React from 'react';
 import './SearchBar.css';
 
-class SearchBar extends React.Component {
-  render() {
-    return( 
-      <div>
-        <input type="text" class="form-control" id="searchBar" placeholder="Enter name" />
-      </div>
-    )
-  }
+function SearchBar({value, inputChange}) {
+  return (<div>
+    <input type="text" class="form-control" id="searchBar" placeholder="Enter name" value={value} name="searchInput" onChange={inputChange} />
+  </div>)
 }
 
 export default SearchBar;
