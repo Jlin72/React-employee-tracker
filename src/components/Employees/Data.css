@@ -1,7 +1,15 @@
 .employeeRow {
   /* width:fit-content; */
   height: 130px;
-  margin: 25px;
+  margin-bottom: 10px;
+}
+
+.employeeRow:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.employeeRow:nth-child(odd) {
+  background-color: white;
 }
 
 .employeePic {
