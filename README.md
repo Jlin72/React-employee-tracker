@@ -29,14 +29,11 @@
   Screenshot of the App on the browser:
 
   Homepage:
-  ![Index](https://raw.githubusercontent.com/Jlin72/Workout-tracker/main/readme_images/Screenshot%20(193).png)
+  ![Index](https://i.imgur.com/KlGmYrH.png)
 
-  Adding a new exercise:
-  ![Adding a new exercise](https://raw.githubusercontent.com/Jlin72/Workout-tracker/main/readme_images/Screenshot%20(194).png)
-
-  Graphs showing user workout:
-  ![Graphs of the user workout](https://raw.githubusercontent.com/Jlin72/Workout-tracker/main/readme_images/Screenshot%20(195).png)
-  Video of the application in use: https://youtu.be/1weUKN6nJj4
+  Searching for an employee:
+  ![Searching for an employee](https://i.imgur.com/CePXHFU.png)
+  Video of the application in use: https://youtu.be/a9Kn_rQJftw
 ## Credits
   Made by: Jhonny Lin (Github: Jlin72 https://github.com/Jlin72)
 ## License
