@@ -1,3 +1,8 @@
+.sizing {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 header {
   background-color: lightblue;
 }
@@ -10,4 +15,12 @@ header {
 
 .center{
   text-align: center;
+}
+
+.top {
+  border-style: solid;
+}
+
+.categories {
+  border-left-style: solid;
 }

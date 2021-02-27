@@ -8,11 +8,13 @@ function Title({children, inputChange, value}) {
       <header>
         <div className="header">
           <h1>Employee Directory</h1>
-          <p style={{textAlign: 'center'}}>Click on the the headers to sort information or use the search bar to narrow results</p>
+          <p style={{textAlign: 'center'}}>Click on the the arrows to sort information or use the search bar to narrow results</p>
         </div>
       </header>
-      <SearchBar inputChange={inputChange} value={value}/>
-      {children}
+      <div className="sizing">
+        <SearchBar inputChange={inputChange} value={value}/>
+        {children}
+      </div>
     </div>
   )
 }
