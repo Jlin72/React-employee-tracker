@@ -1,0 +1,26 @@
+.employeeRow {
+  /* width:fit-content; */
+  height: 130px;
+  margin-bottom: 10px;
+}
+
+.employeeRow:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.employeeRow:nth-child(odd) {
+  background-color: white;
+}
+
+.employeePic {
+  border-radius: 50%;
+  display: flex;
+}
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.textCenter {
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+.sizing {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+header {
+  background-color: #11B4B8;
+}
+
+.header {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+
+.center{
+  text-align: center;
+}
+
+.top {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-weight: bold;
+}
+
