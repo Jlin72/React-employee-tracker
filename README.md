@@ -29,7 +29,7 @@
   Screenshot of the App on the browser:
 
   Homepage:
-  ![Homepage](https://i.imgur.com/PemKmvn.png)
+  ![Index](https://i.imgur.com/KlGmYrH.png)
 
   Searching for an employee:
   ![Searching for an employee](https://i.imgur.com/CePXHFU.png)
